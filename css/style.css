@@ -18,3 +18,29 @@ html {
     max-width: 1000px;
     margin: 0 auto;
 }
+
+.container > div {
+    margin-bottom: 30px;
+}
+
+li {
+    cursor: pointer;
+    position: relative;
+}
+
+/* .done {
+    text-decoration: line-through;
+    color: greenyellow;
+} */
+
+.done::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: red;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
